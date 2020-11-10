@@ -8,7 +8,7 @@ var slideone = slide.querySelector(".slider__item--one");
 var slidetwo = slide.querySelector(".slider__item--two");
 var slidethree = slide.querySelector(".slider__item--three");
 
-slidebuttonone.addEventListener("click", function (evt) { 
+slidebuttonone.addEventListener("click", function (evt) {
     evt.preventDefault();
     slideone.classList.add("slider__item--active");
     slidebuttonone.classList.add("slider-buttons__button--active");
@@ -19,7 +19,7 @@ slidebuttonone.addEventListener("click", function (evt) {
 });
 
 slidebuttontwo.addEventListener("click", function (evt) {
-    
+
     evt.preventDefault();
     slideone.classList.remove("slider__item--active");
     slidebuttonone.classList.remove("slider-buttons__button--active");
@@ -30,7 +30,7 @@ slidebuttontwo.addEventListener("click", function (evt) {
 });
 
 slidebuttonthree.addEventListener("click", function (evt) {
-    
+
     evt.preventDefault();
     slideone.classList.remove("slider__item--active");
     slidebuttonone.classList.remove("slider-buttons__button--active");

@@ -4,9 +4,8 @@
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,700i&display=swap" rel="stylesheet">
-    <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
-    <script src="https://api-maps.yandex.ru/2.1/?apikey=52deaf52-562a-4067-81a7-4ad46dde04a9&lang=ru_RU"></script>
+    <link href="css/normalize.mini.css" rel="stylesheet">
+    <link href="css/style.mini.css" rel="stylesheet">
   </head>
   <body>
     <header class="page-header">
@@ -21,7 +20,7 @@
             <li class="menu__item"><a class="menu__link current" aria-label="Перейти на страницу магазин">Магазин</a></li>
             <li class="menu__item"><a class="menu__link" href="#" aria-label="Перейти на страницу контакты">Контакты</a></li>
           </ul>
-          <a class="navigation__basket">Корзина</a>
+          <a class="navigation__basket" href="basket.html" aria-label="Перейти в корзину">Корзина</a>
         </nav>
       </div>
     </header>
@@ -90,6 +89,7 @@
           </form>
         </aside>
         <section class="catalog__goods goods">
+          <h2 class="visually-hidden">Товары</h2>
           <div class="goods__sort">
             <p class="sort__title">Сортировать:</p>
             <ul class="sort__list">
@@ -214,7 +214,7 @@
           </ul>
           <ul class="goods__paginator paginator">
             <li class="paginator__item">
-              <a class="paginator__link paginator__link--active" active aria-label="Перейти на первую страницу">1</a>
+              <a class="paginator__link paginator__link--active" aria-label="Перейти на первую страницу">1</a>
             </li>
             <li class="paginator__item">
               <a class="paginator__link" href="#" aria-label="Перейти на вторую страницу">2</a>
@@ -240,7 +240,7 @@
             <h3 class="contacts__title">nёrds design studio</h3>
             <p class="contacts__text">191186, Санкт-Петербург, ул.&nbsp;Б. Конюшенная, д. 19/8</p>
             <a class="contacts__phone" href="tel:+78122757575" aria-label="Телефон студии">тел. +7 (812) 275-75-75</a>
-            <a class="contacts__link btn" href="#" aria-label="Написать нам">Напишите нам</a>
+            <a class="contacts__link btn" href="write-us" aria-label="Написать нам">Напишите нам</a>
           </div>
         </div>
       </div>
@@ -274,7 +274,34 @@
         </div>
       </div>
     </footer>
-    <script src="js/map.js"></script>
-    <script src="js/modal.js"></script>
+
+  <section class="modal">
+    <div class="modal__wrap">
+      <h2 class="modal__title">Напишите нам</h2>
+      <button class="modal__close" type="button" aria-label="Закрыть модальное окно">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="#FB565A" width="21" height="21" viewBox="0 0 21 21">
+          <path d="M13.328 10.5l7.371-7.371a1.003 1.003 0 0 0 0-1.414L19.285.3a1.003 1.003 0 0 0-1.414 0L10.5 7.672 3.129.301a1.003 1.003 0 0 0-1.414 0L.301 1.715a1.003 1.003 0 0 0 0 1.414L7.672 10.5.301 17.871a1.003 1.003 0 0 0 0 1.414l1.415 1.414a1.003 1.003 0 0 0 1.414 0l7.371-7.371 7.371 7.371a1.003 1.003 0 0 0 1.414 0l1.414-1.414a1.003 1.003 0 0 0 0-1.414L13.328 10.5z"/>
+        </svg>
+      </button>
+    </div>
+    <form class="modal__form" method="post" action="https://echo.htmlacademy.ru">
+      <p class="modal__half-width">
+        <label class="modal__label" for="fullname">Ваше имя:</label>
+        <input class="modal__input" type="text" id="fullname" name="fullname" placeholder="Имя Фамилия">
+      </p>
+      <p class="modal__half-width">
+        <label class="modal__label" for="email">Ваш e-mail:</label>
+        <input class="modal__input" type="email" id="email" name="email" placeholder="email@example.com">
+      </p>
+      <p class="modal__full-width">
+        <label class="modal__label" for="comment">Текст письма:</label>
+        <textarea class="modal__textarea" id="comment" name="comment" placeholder="В свободной форме"></textarea>
+      </p>
+      <button class="modal__button btn" type="submit">Отправить</button>
+    </form>
+  </section>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=52deaf52-562a-4067-81a7-4ad46dde04a9&lang=ru_RU"></script>
+    <script src="js/map.mini.js"></script>
+    <script src="js/modal.mini.js"></script>
   </body>
 </html>

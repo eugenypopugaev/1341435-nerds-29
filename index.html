@@ -4,16 +4,15 @@
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,&display=swap" rel="stylesheet">
-    <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
-    <script src="https://api-maps.yandex.ru/2.1/?apikey=52deaf52-562a-4067-81a7-4ad46dde04a9&lang=ru_RU"></script>
+    <link href="css/normalize.mini.css" rel="stylesheet">
+    <link href="css/style.mini.css" rel="stylesheet">
   </head>
 <body class="page">
   <header class="page-header">
     <div class="page-header__container container">
       <nav class="page-header__navigation navigation">
         <a class="navigation__logo logo" aria-label="Логотип">
-          <img class="logo__img" src="img/nerds-logo.svg" width="160" height="65" alt="Иконка-логотип">
+          <img class="logo__img index" src="img/nerds-logo.svg" width="160" height="65" alt="Иконка-логотип">
         </a>
         <ul class="navigation__menu menu">
           <li class="menu__item"><a class="menu__link" href="#" aria-label="Перейти на страницу студия">Студия</a></li>
@@ -21,7 +20,7 @@
           <li class="menu__item"><a class="menu__link" href="catalog.html" aria-label="Перейти на страницу магазин">Магазин</a></li>
           <li class="menu__item"><a class="menu__link" href="#" aria-label="Перейти на страницу контакты">Контакты</a></li>
         </ul>
-        <a class="navigation__basket" href="#" aria-label="Перейти в корзину">Корзина</a>
+        <a class="navigation__basket" href="basket.html" aria-label="Перейти в корзину">Корзина</a>
       </nav>
     </div>
   </header>
@@ -32,12 +31,12 @@
         <ul class="slider__list">
           <li class="slider__item slider__item--one slider__item--active">
             <div class="slider__wrap">
-              <p class="slider__title">Долго, дорого,<br>скрупулёзно.</p>
+              <p class="slider__title">Долго, дорого,<br>скрупулезно.</p>
               <p class="slider__text">Математически выверенный дизайн <br> для вашего сайта или мобильного приложения.</p>
               <a class="slider__link btn" href="#" aria-label="Перейти на страницу узнать больше">Узнать больше</a>
             </div>
             <div class="slider__image slider__image--one">
-              <img src="img/slide-picture.png" width="760" height="431" alt="Изображение телефонов">
+              <img src="img/slide-picture.png" width="700" height="410" alt="Изображение телефонов">
             </div>
           </li>
           <li class="slider__item slider__item--two">
@@ -47,7 +46,7 @@
               <a class="slider__link btn" href="#" aria-label="Перейти на страницу узнать больше">Узнать больше</a>
             </div>
             <div class="slider__image slider__image--two">
-              <img src="img/slide-picture-2.png" width="760" height="431" alt="Изображение телефонов">
+              <img src="img/slide-picture-2.png" width="700" height="410" alt="Изображение телефонов">
             </div>
           </li>
           <li class="slider__item slider__item--three">
@@ -57,7 +56,7 @@
               <a class="slider__link btn" href="#" aria-label="Перейти на страницу узнать больше">Узнать больше</a>
             </div>
             <div class="slider__image slider__image--three">
-              <img src="img/slide-picture-3.png" width="760" height="431" alt="Изображение телефонов">
+              <img src="img/slide-picture-3.png" width="700" height="410" alt="Изображение телефонов">
             </div>
           </li>
         </ul>
@@ -90,6 +89,7 @@
       </div>
     </section>
     <section class="page-main__about-us about-us">
+      <h2 class="visually-hidden">О нас</h2>
       <div class="about-us__container container">
         <div class="about-us__info">
           <p class="about-us__title">Мы — маленькая, но гордая дизайн-студия из Краснодара.</p>
@@ -124,22 +124,22 @@
       <div class="partners_container container">
         <h2 class="visually-hidden">Клиенты</h2>
         <ul class="partners__list">
-          <li class="partners__item">
+          <li class="partners__item partners__item--html">
             <a class="partners__link" href="https://htmlacademy.ru/intensive/htmlcss" target="_blank" aria-label="перейти на сайт html академии">
               <img class="partners__image" src="img/htmlacdemy-logo.png" width="199" height="68" alt="логотип академии">
             </a>
           </li>
-          <li class="partners__item">
+          <li class="partners__item partners__item--barber">
             <a class="partners__link" href="#" target="_blank" aria-label="Сайт Barbershop">
               <img class="partners__image" src="img/borodinsli-logo.png" width="209" height="90" alt="логотип бородинский">
             </a>
           </li>
-          <li class="partners__item">
+          <li class="partners__item partners__item--pink">
             <a class="partners__link" href="#" target="_blank" aria-label="перейти на сайт pink">
               <img class="partners__image" src="img/pink-logo.png" width="185" height="52" alt="логотип Pink">
             </a>
           </li>
-          <li class="partners__item">
+          <li class="partners__item partners__item--mishka">
             <a class="partners__link" href="#" target="_blank" aria-label="перейти на сайт Mishka">
               <img class="partners__image" src="img/mishka-logo.png" width="173" height="73" alt="логотип Mishka">
             </a>
@@ -159,7 +159,7 @@
           <h3 class="contacts__title">nёrds design studio</h3>
           <p class="contacts__text">191186, Санкт-Петербург, ул.&nbsp;Б. Конюшенная, д. 19/8</p>
           <a class="contacts__phone" href="tel:+78122757575" aria-label="Телефон студии">тел. +7 (812) 275-75-75</a>
-          <a class="contacts__link btn" href="#" aria-label="Написать нам">Напишите нам</a>
+          <a class="contacts__link btn" href="write-us" aria-label="Написать нам">Напишите нам</a>
         </div>
       </div>
     </div>
@@ -202,7 +202,7 @@
         <svg xmlns="http://www.w3.org/2000/svg" fill="#FB565A" width="21" height="21" viewBox="0 0 21 21">
           <path d="M13.328 10.5l7.371-7.371a1.003 1.003 0 0 0 0-1.414L19.285.3a1.003 1.003 0 0 0-1.414 0L10.5 7.672 3.129.301a1.003 1.003 0 0 0-1.414 0L.301 1.715a1.003 1.003 0 0 0 0 1.414L7.672 10.5.301 17.871a1.003 1.003 0 0 0 0 1.414l1.415 1.414a1.003 1.003 0 0 0 1.414 0l7.371-7.371 7.371 7.371a1.003 1.003 0 0 0 1.414 0l1.414-1.414a1.003 1.003 0 0 0 0-1.414L13.328 10.5z"/>
         </svg>
-      </a>
+      </button>
     </div>
     <form class="modal__form" method="post" action="https://echo.htmlacademy.ru">
       <p class="modal__half-width">
@@ -220,8 +220,9 @@
       <button class="modal__button btn" type="submit">Отправить</button>
     </form>
   </section>
-  <script src="js/map.js"></script>
-  <script src="js/slider.js"></script>
-  <script src="js/modal.js"></script>
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=52deaf52-562a-4067-81a7-4ad46dde04a9&lang=ru_RU"></script>
+  <script src="js/map.mini.js"></script>
+  <script src="js/slider.mini.js"></script>
+  <script src="js/modal.mini.js"></script>
 </body>
 </html>
