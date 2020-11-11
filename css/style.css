@@ -1514,3 +1514,8 @@ input[type='number'] {
   top: 80px;
   left: 0;
 }
+
+.page-footer__wrap--catalog {
+  position: relative;
+  padding: 113px 0 54px;
+}
