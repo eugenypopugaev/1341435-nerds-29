@@ -620,8 +620,8 @@ sup {
 }
 
 .page-footer__img {
-  width: 100%;
-  height: 416px;
+  width: 1440px;
+  margin: 0 auto;
 }
 
 .page-footer__map {
@@ -774,23 +774,23 @@ sup {
 
 @-webkit-keyframes show {
   0% {
-    -webkit-transform: translateX(-50%) scale(0);
-            transform: translateX(-50%) scale(0);
+    -webkit-transform: translate(-50%, -50%) scale(0);
+            transform: translate(-50%, -50%) scale(0);
   }
   100% {
-    -webkit-transform: translateX(-50%) scale(1);
-            transform: translateX(-50%) scale(1);
+    -webkit-transform: translate(-50%, -50%) scale(1);
+            transform: translate(-50%, -50%) scale(1);
   }
 }
 
 @keyframes show {
   0% {
-    -webkit-transform: translateX(-50%) scale(0);
-            transform: translateX(-50%) scale(0);
+    -webkit-transform: translate(-50%, -50%) scale(0);
+            transform: translate(-50%, -50%) scale(0);
   }
   100% {
-    -webkit-transform: translateX(-50%) scale(1);
-            transform: translateX(-50%) scale(1);
+    -webkit-transform: translate(-50%, -50%) scale(1);
+            transform: translate(-50%, -50%) scale(1);
   }
 }
 
@@ -1124,6 +1124,7 @@ input[type='number'] {
 
 .grid__label {
   padding-left: 36px;
+  padding-top: 4px;
   position: relative;
   line-height: 19px;
   color: #283136;
@@ -1137,7 +1138,7 @@ input[type='number'] {
   top: 0;
   left: 0;
   background-image: url(../img/radio-on.svg);
-  background-position: 0 -5px;
+  background-position: 0 0;
   background-repeat: no-repeat;
   background-size: 25px 25px;
   opacity: 0.4;
@@ -1190,7 +1191,7 @@ input[type='number'] {
 
 .features__title {
   margin: 0;
-  margin-bottom: 16px;
+  margin-bottom: 14px;
   font-weight: bold;
   font-size: 18px;
   line-height: 30px;
@@ -1200,6 +1201,7 @@ input[type='number'] {
 .features__label {
   position: relative;
   padding-left: 36px;
+  padding-top: 3px;
 }
 
 .features__input+.features__label::before {
@@ -1210,7 +1212,7 @@ input[type='number'] {
   top: 0;
   left: 0;
   background-image: url(../img/checkbox-off.svg);
-  background-position: 0 -3px;
+  background-position: 0 0;
   background-repeat: no-repeat;
   background-size: 23px 23px;
   opacity: 0.4;
@@ -1224,7 +1226,7 @@ input[type='number'] {
   top: 0;
   left: 0;
   background-image: url(../img/checkbox-on.svg);
-  background-position: 2px -4px;
+  background-position: 2px -1px;
   background-repeat: no-repeat;
   background-size: 23px 23px;
   opacity: 0.4;
